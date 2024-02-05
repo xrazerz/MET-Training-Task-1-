@@ -1,0 +1,7 @@
+<?php 
+include('db_connection.php');
+    session_start();
+    session_destroy();
+    header('Location:../pages/login.html');
+    exit();
+?>

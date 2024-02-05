@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>انشاء حساب</title>
+  <link rel="stylesheet" href="./styles/register.css">
+</head>
+<body>
+  <!-- Start Registration Form -->
+  <section>
+    <div class="form-box">
+        <div class="form-value">
+            <form action="backend/register.php" method="POST">
+                <h2>انشاء حساب</h2>
+                <div class="inputbox">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" required name="username">
+                    <label for="">اسم المستخدم</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <input type="email" required name="email">
+                    <label for="">البريد الإلكتروني</label>
+                </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required name="password">
+                    <label for="">كلمة المرور</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">تذكرني</label>
+                </div>
+                <button type="submit">دخول</button>
+                <div class="register">
+                  <a href="pages/login.html" class="login-account">
+                    سجل الدخول الآن
+                  </a>
+                </div>
+            </form>
+        </div>
+    </div>
+  </section>
+  <!-- End Registration Form -->
+
+  <!-- Ionicons -->
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>

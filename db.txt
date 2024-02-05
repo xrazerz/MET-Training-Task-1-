@@ -1,0 +1,20 @@
+CREATE DATABASE urname;
+
+USE usersdb;
+/*
+Users Table
+*/
+CREATE TABLE users (
+    username VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+/*
+Products Table
+*/
+CREATE TABLE products(
+id in PRIMARY KEY NOT NULL, 
+name VARCHAR(55) NOT NULL, 
+description VARCHAR(255), 
+price REAL
+)

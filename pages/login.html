@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ـسجيل الدخول</title>
+  <link rel="stylesheet" href="../styles/login.css">
+</head>
+<body>
+  <!-- Start Registeration Form -->
+  
+  <section>
+    <div class="form-box" >
+        <div class="form-value">
+            <form action="../backend/login.php" method="POST">
+                <h2>تسجيل الدخول</h2>
+                <div class="inputbox">
+                  <ion-icon name="mail-outline"></ion-icon>
+                  <input type="email" required name="email">
+                  <label for="">البريد الالكتروني</label>
+              </div>
+                <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required name="password">
+                    <label for="">كلمه السر</label>
+                </div>
+                <div class="forget">
+                    <label for=""><input type="checkbox">Remember Me</label>
+                  
+                </div>
+                <button type="submit">دخول</button>
+                <div class="register">
+                  <a href="../index.html" class="login-account">
+                    انشاء حساب جديد
+                  </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- End Registeration Form -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
